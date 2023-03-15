@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ffffffff</color>
+    <color name="colorAccent">@color/color_4B88F9</color>
+
+
+    <!--状态栏颜色-->
+    <color name="status_bar_gray_color">#ffb3b3b3</color>
+    <color name="status_bar_red_color">#ffDA1900</color><!--真用到了，应该屏蔽掉-->
+    <color name="app_activity_bg">#fff6f8fa</color><!--项目整体的背景色-->
+    <!--列表分割线色值-->
+    <color name="new_driver_line">#ffe3e5ea</color><!--列表分割线色值-->
+    <!--状态栏颜色-->
+    <!--底部4个tab按钮颜色-->
+    <color name="homepage_tab_selected_color">#436edc</color>
+    <color name="homepage_tab_unselected_color">@color/color_354056</color>
+    <!--底部4个tab按钮颜色-->
+    <!--绿色文字-->
+    <!--蓝色文字-->
+    <!--红色文字-->
+    <!--红色文字-->
+    <color name="color_white">#ffffff</color>     <!--白色文字-->
+    <color name="wind_back_bg">#d8d8d8</color>
+    <color name="color_1CA998">#1CA998</color>
+
+    <color name="transparent">#00000000</color>
+    <!--规则停用背景色-->
+    <!--部分文字颜色-->
+    <color name="color_000000">#000000</color>
+    <color name="color_dddddd">#dddddd</color><!--分隔线颜色-->
+    <!--分隔线颜色-->
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <!--我的页面圆圈蓝色文字-->
+    <!--按钮渐变开始颜色,enable-->
+    <!--按钮渐变结束颜色,unable-->
+    <!--按钮渐变开始颜色,unable-->
+    <!--按钮渐变结束颜色,unable-->
+
+    <color name="color_7c7c7c">#7c7c7c</color>
+    <color name="color_333333">#333333</color>
+    <!--背景蓝色-->
+    <!--背景蓝色-->
+    <!--统一背景色-->
+    <color name="color_4B88F9">#4B88F9</color>
+    <color name="color_0076ff">#0f63a4</color>
+
+    <color name="color_030303">#030303</color>
+    <color name="color_0f63a4">#0f63a4</color>
+    <color name="color_cfd1d6">#cfd1d6</color>
+    <!-- 看板-->
+    <color name="color_354056">#354056</color>
+    <!--验证码页，已绑定手机号-->
+
+    <color name="color_999999">#999999</color>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.schoolnews.manage.application.base.BaseActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/top_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:background="@android:color/white"
+            android:theme="@style/AppTheme"
+            android:visibility="visible"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:id="@+id/toolbar_back_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="left|center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/icon_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="我是标题"
+                android:textColor="@color/color_333333"
+                android:textSize="@dimen/text_size_18" />
+
+            <RelativeLayout
+                android:id="@+id/toolbar_right_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center">
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <View
+            android:id="@+id/toolbar_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eff3f7"
+            app:layout_behavior='@string/appbar_scrolling_view_behavior'></View>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior='@string/appbar_scrolling_view_behavior' />
+
+</android.support.design.widget.CoordinatorLayout>

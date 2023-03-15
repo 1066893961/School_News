@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.schoolnews.manage.application">
+
+    <!-- <permission
+         android:name="com.kd.huiju.permission.JPUSH_MESSAGE"
+         android:protectionLevel="signature" /> &lt;!&ndash; Required  一些系统要求的权限，如访问网络等 &ndash;&gt;-->
+    <!--<uses-permission android:name="com.kd.huiju.permission.JPUSH_MESSAGE" />-->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Optional for location -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 用于开启 debug 版本的应用在6.0 系统上 层叠窗口权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="com.schoolnews.manage.application.JlhxApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity
+            android:name="com.schoolnews.manage.application.ui.guide.WelcomeActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/WelcomeEntranceActionBarTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.schoolnews.manage.application.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+       <meta-data
+           android:name="UMENG_APPKEY"
+           android:value="5d53a5e64ca3577153000b57"></meta-data>
+
+        <activity
+            android:name="com.schoolnews.manage.application.ui.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.schoolnews.manage.application.ui.home.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.schoolnews.manage.application.ui.home.activity.SchoolNewsDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.schoolnews.manage.application.ui.login.activity.RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.schoolnews.manage.application.ui.login.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.schoolnews.manage.application.ui.person.activity.MyCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.schoolnews.manage.application.ui.person.activity.PersonInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.schoolnews.manage.application.ui.person.activity.PutMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.schoolnews.manage.application.ui.person.activity.ModifyPsdActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_16">
+
+    <ImageView
+        android:id="@+id/header_iv"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@mipmap/icon_header" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_toRightOf="@+id/header_iv"
+        android:text="评论者名字"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:layout_toRightOf="@+id/header_iv"
+        android:text="咖啡机奥拉夫骄傲咖啡机爱发咖啡机奥拉夫骄傲咖啡机爱发科封了就咖啡机奥拉夫骄傲咖啡机爱发科封了就科封了就"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

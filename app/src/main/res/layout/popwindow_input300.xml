@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="8dp"
+    android:paddingTop="7dp"
+    android:paddingEnd="7dp">
+
+    <RelativeLayout
+        android:id="@+id/text_input_rl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_8"
+        android:paddingRight="@dimen/dp_8"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@drawable/send_msg_tx_bg">
+
+        <EditText
+            android:id="@+id/text_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="请输入咨询内容"
+            android:maxLength="300"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/submit_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        android:text="发布"
+        android:textSize="15sp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/color_999999"
+        android:enabled="false"/>
+
+
+</LinearLayout>

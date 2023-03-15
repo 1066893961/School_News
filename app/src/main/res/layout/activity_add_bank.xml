@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:text="意见反馈"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16" />
+
+        <EditText
+            android:id="@+id/content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_12"
+            android:background="@drawable/homepage_list_item_bg"
+            android:hint="请输入意见反馈内容"
+            android:padding="@dimen/dp_12"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/sp_16" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/add_tv"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="@dimen/dp_40"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="@dimen/dp_40"
+        android:background="@drawable/login_btn_click_bg"
+        android:gravity="center"
+        android:text="确认提交"
+        android:textColor="#ffffffff"
+        android:textSize="18sp" />
+</LinearLayout>

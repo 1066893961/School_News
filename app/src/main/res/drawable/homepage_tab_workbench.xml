@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@mipmap/homepage_tab_workbench_selected" android:state_selected="true"/>
+    <item android:drawable="@mipmap/homepage_tab_workbench_unselected"/>
+</selector>
